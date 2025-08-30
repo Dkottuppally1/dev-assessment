@@ -5,7 +5,7 @@ The goal is to see how you approach reading code, extending functionality, and w
 
 This app is developed using React, Tailwind, and Vite.
 
-Estimated time: about **1 hour - 2 hours**
+Estimated time: about **1 hour**
 
 If you have any questions about this assessment, please contact @sijunkevinhu on Discord.
 
@@ -43,6 +43,16 @@ For example, for the detail view (modal / popup), the modal/popup can look howev
 - The modal should include a **Close Button**
 - The modal should also close when the user presses the **Esc key**
 - The games data is given to you in a JSON format in the **gamesData.ts** file.
+
+### Bonus (Optional)
+
+This part is **not required** and will not affect your assessment.
+If you'd like to show more of your product/design thinking, we'd love to hear your ideas:
+
+- Visit the [GT Esports Website](https://gatechesports.com).
+- Suggest **1-3 new features or improvements** you think could make this site better for users.
+- These can be anything: a small UI improvement, a new feature, or a usability fix.
+- You don't need to implement them. Just write your suggestions in a short list at the end of your submission (e.g. in a separate markdown file or in the README of your repo)
 
 ## Submission
 
