@@ -1,6 +1,6 @@
 # GT Esports Full-Stack Developers Assessment
 
-Welcome! In this short coding exercise, you’ll extend a minimal React app by adding **two small features**.  
+Welcome! In this short coding exercise, you’ll add features onto a very basic version of our web app by adding **two small features**.  
 The goal is to see how you approach reading code, extending functionality, and writing clean, understandable code.
 
 This app is developed using React, Tailwind, and Vite.
