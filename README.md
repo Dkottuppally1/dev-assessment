@@ -35,12 +35,14 @@ For example, for the detail view (modal / popup), the modal/popup can look howev
 - The search should be case-insensitive.
 - If no games match, display a **"No results found"** message.
 - There's two types of games. Competitive and casual. They are two separate lists of games. The search functionality only filters either competitive or casual based on the current type selected on the page.
+- The games data is given to you in a JSON format in the **gamesData.ts** file.
 
 ### 2. Add a Detail View (Modal / Popup) in Games Page
 
 - When a user clicks on 'Learn More' in a game card, open a modal (or a popup) that shows the game's **name** and **description**
 - The modal should include a **Close Button**
 - The modal should also close when the user presses the **Esc key**
+- The games data is given to you in a JSON format in the **gamesData.ts** file.
 
 ## Submission
 
