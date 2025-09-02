@@ -5,7 +5,7 @@ The goal is to see how you approach reading code, extending functionality, and w
 
 This app is developed using React, Tailwind, and Vite.
 
-Estimated time: about **1 hour**
+Estimated time: about **1 hour - 2 hours**
 
 If you have any questions about this assessment, please contact @sijunkevinhu on Discord.
 
