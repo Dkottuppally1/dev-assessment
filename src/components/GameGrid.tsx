@@ -4,6 +4,13 @@ import { useState } from "react";
 
 function GameGrid() {
   const [comp, setComp] = useState(true);
+  const [searchTerm, setSearchTerm] = useState("");
+
+  // Filter games based on search term
+  const currentGames = comp ? games : casual_games;
+  const filteredGames = Object.entries(currentGames).filter(([name]) =>
+    name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
   return (
     <div className="flex flex-wrap justify-center px-[100px]">
@@ -29,18 +36,35 @@ function GameGrid() {
           Casual
         </button>
       </div>
-      {Object.entries(comp ? games : casual_games).map(
-        ([name, game], index) => (
-          <div className="p-3">
+      
+      {/* Search Bar */}
+      <div className="w-full px-4 pb-6">
+        <input
+          type="text"
+          placeholder="Search games..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          className="w-full max-w-md rounded-lg border border-gray-300 bg-white/10 px-4 py-2 text-white placeholder-gray-300 backdrop-blur-sm focus:border-bright-buzz focus:outline-none focus:ring-2 focus:ring-bright-buzz/50"
+        />
+      </div>
+
+      {/* Game Cards */}
+      {filteredGames.length > 0 ? (
+        filteredGames.map(([name, game], index) => (
+          <div className="p-3" key={index}>
             <GameCard
-              key={index}
               image={game.image}
               name={name}
               link={game.pageLink}
               discordLink={game.discordLink}
+              description={game.description}
             />
           </div>
-        )
+        ))
+      ) : (
+        <div className="w-full text-center">
+          <p className="text-white text-lg font-barlow">No results found</p>
+        </div>
       )}
     </div>
   );
